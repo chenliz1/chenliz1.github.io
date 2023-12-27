@@ -1,141 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Personal Website</title>
+    <title>Lizhe Chen - Research Engineer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #f0f0f0;
         }
 
         header {
             background-color: #333;
-            color: #fff;
-            padding: 1em;
+            color: white;
+            padding: 20px;
             text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
         }
 
         section {
-            max-width: 800px;
-            margin: 2em auto;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
+            margin: 20px;
+        }
+
+        #about, #experience, #skills, #research, #portfolio, #contact, #blog {
+            background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
 
-        footer {
-            text-align: center;
-            padding: 1em;
-            background-color: #333;
-            color: #fff;
+        h2 {
+            color: #333;
         }
     </style>
 </head>
-
 <body>
-
     <header>
-        <h1>Lizhe (Lucas) Chen</h1>
-        <p>Welcome to my personal website</p>
+        <h1>Welcome to My Personal Website</h1>
+        <p>I'm Lizhe Chen, a Research Engineer at Meta Platform Inc. (Reality Labs), passionate about computer science and technology.</p>
     </header>
 
-    <section>
+    <section id="about">
         <h2>About Me</h2>
-        <p>This is a brief introduction about yourself. You can talk about your interests, skills, and anything you'd like visitors to know.</p>
-    </section>
-
-    <section>
-        <h2>Education & Awards</h2>
-        <p>
-            <strong>University of Waterloo, MMath, Computer Science</strong> (Supervisor: Olga Veksler, CGPA: 87%)<br>
-            May 2022
-        </p>
-        <p>
-            <strong>University of Toronto, BSc, Computer Science</strong> (CGPA: 3.86 / 4.0)<br>
-            Jun 2019
-        </p>
+        <p>Educational Background:</p>
         <ul>
-            <li>CVPR 2022’s ActivityNet Challenge – Second Place (Member) - Jun 2022</li>
-            <li>American Statistical Association Data Fest: Best Data Visualization Award - May 2019</li>
-            <li>NSERC - Undergraduate Student Research Awards - Aug 2018</li>
+            <li>MMath in Computer Science, University of Waterloo</li>
+            <li>BSc in Computer Science, University of Toronto</li>
+        </ul>
+        <p>Awards:</p>
+        <ul>
+            <li>Second Place in CVPR 2022’s ActivityNet Challenge</li>
+            <li>Best Data Visualization Award, American Statistical Association Data Fest</li>
         </ul>
     </section>
 
-    <section>
+    <section id="experience">
+
+            <h2>Work Experience</h2>
+            <article>
+                <h3>Research Engineer, Meta Platform Inc. (Reality Labs)</h3>
+                <p>Aug 2022 – Current</p>
+                <ul>
+                    <li>Developed a Python library to evaluate user interactions and compare new UI element or controller prototype features.</li>
+                    <li>Built an interactive data visualization platform using Python and Pandas queries to visualize experiment results online.</li>
+                    <li>Created an online model that utilizes EMG & IMU activities to tag user behavior and personalize posture recognition.</li>
+                    <li>Engineered user activity feature extraction for ML models with PySpark, optimizing cloud data bucket input/output.</li>
+                    <li>Managed the training of a user action prediction model by interpreting TensorBoard and guiding parameter tuning.</li>
+                </ul>
+            </article>
+        
+            <article>
+                <h3>Computer Vision Researcher, Huawei Canada (Noah’s Ark)</h3>
+                <p>Sep 2020 – Aug 2022</p>
+                <ul>
+                    <li>Developed an advanced social media content classification algorithm by combining NLP and vision neural networks.</li>
+                    <li>Conducted self-supervised video learning research led to an 11% accuracy boost in fine-grained action recognition.</li>
+                    <li>Led interns to perform distributed training of Vision transformer on cloud with extensive video and text datasets.</li>
+                    <li>Optimized ResNet with compression for online gesture recognition, integrating it into a C++ environment (ONNX).</li>
+                    <li>Leveraged multimodal transformer models to excel in text and video retrieval, enhancing video recommendations.</li>
+                </ul>
+            </article>
+        
+            <article>
+                <h3>R&D Engineer, Modiface Inc.</h3>
+                <p>Sep 2018 – May 2019</p>
+                <ul>
+                    <li>Customized the MobileNet-V2 for the weakly-supervised human nail semantic segmentation.</li>
+                    <li>Implemented neural network architectures in PyTorch, such as inverted residual block, decomposed CNN.</li>
+                    <li>Developed data cleaning and augmentation classes for PyTorch and TensorFlow frameworks.</li>
+                </ul>
+            </article>
+        
+            <article>
+                <h3>Web Developer Intern, Modiface Inc.</h3>
+                <p>May 2017 – Apr 2018</p>
+                <ul>
+                    <li>Built a Facebook Chat bot for recommending products and helping customers to simulate makeup on virtually.</li>
+                    <li>Constructed back-end & database for web app through Node.JS and writing SQL queries to generate data report.</li>
+                    <li>Reduced ~30% response time by optimizing the data structures and integrating the actions.</li>
+                </ul>
+            </article>
+        
+            <!-- Add other work experiences in a similar format -->
+
+    </section>
+
+    <section id="skills">
         <h2>Technical Skills</h2>
-        <p>
-            Programming Languages: Python, JavaScript, C++, Java, MATLAB, SQL <br>
-            Libraries & Tools: PyTorch, TensorFlow, Pandas, Seaborn, PySpark, ONNX Runtime, OpenCV, Huawei Cloud, AWS
-        </p>
+        <p>Programming Languages:</p>
+        <ul>
+            <li>Python, JavaScript, C++, Java, MATLAB, SQL</li>
+        </ul>
+        <p>Libraries & Tools:</p>
+        <ul>
+            <li>PyTorch, TensorFlow, Pandas, Seaborn, PySpark, ONNX Runtime, OpenCV, Huawei Cloud, AWS</li>
+        </ul>
     </section>
 
-    <section>
-        <h2>Work Experience</h2>
-        <article>
-            <h3>Research Engineer, Meta Platform Inc. (Reality Labs)</h3>
-            <p>Aug 2022 – Current</p>
-            <ul>
-                <li>Developed a Python library to evaluate user interactions and compare new UI element or controller prototype features.</li>
-                <li>Built an interactive data visualization platform using Python and Pandas queries to visualize experiment results online.</li>
-                <li>Created an online model that utilizes EMG & IMU activities to tag user behavior and personalize posture recognition.</li>
-                <li>Engineered user activity feature extraction for ML models with PySpark, optimizing cloud data bucket input/output.</li>
-                <li>Managed the training of a user action prediction model by interpreting TensorBoard and guiding parameter tuning.</li>
-            </ul>
-        </article>
-    
-        <article>
-            <h3>Computer Vision Researcher, Huawei Canada (Noah’s Ark)</h3>
-            <p>Sep 2020 – Aug 2022</p>
-            <ul>
-                <li>Developed an advanced social media content classification algorithm by combining NLP and vision neural networks.</li>
-                <li>Conducted self-supervised video learning research led to an 11% accuracy boost in fine-grained action recognition.</li>
-                <li>Led interns to perform distributed training of Vision transformer on cloud with extensive video and text datasets.</li>
-                <li>Optimized ResNet with compression for online gesture recognition, integrating it into a C++ environment (ONNX).</li>
-                <li>Leveraged multimodal transformer models to excel in text and video retrieval, enhancing video recommendations.</li>
-            </ul>
-        </article>
-    
-        <article>
-            <h3>R&D Engineer, Modiface Inc.</h3>
-            <p>Sep 2018 – May 2019</p>
-            <ul>
-                <li>Customized the MobileNet-V2 for the weakly-supervised human nail semantic segmentation.</li>
-                <li>Implemented neural network architectures in PyTorch, such as inverted residual block, decomposed CNN.</li>
-                <li>Developed data cleaning and augmentation classes for PyTorch and TensorFlow frameworks.</li>
-            </ul>
-        </article>
-    
-        <article>
-            <h3>Web Developer Intern, Modiface Inc.</h3>
-            <p>May 2017 – Apr 2018</p>
-            <ul>
-                <li>Built a Facebook Chat bot for recommending products and helping customers to simulate makeup on virtually.</li>
-                <li>Constructed back-end & database for web app through Node.JS and writing SQL queries to generate data report.</li>
-                <li>Reduced ~30% response time by optimizing the data structures and integrating the actions.</li>
-            </ul>
-        </article>
-    
-        <!-- Add other work experiences in a similar format -->
-    </section>
-
-    <section>
+    <section id="research">
         <h2>Academic Research</h2>
-        <!-- Add your academic research details here -->
-        <!-- Use a similar format for each research project -->
+        <p>Focused on self-supervised video representation learning and dynamic cross-scale aggregation for temporal action localization.</p>
+        <p><a href=https://ojs.aaai.org/index.php/AAAI/article/view/20047 target="_blank">Self-Supervised Spatiotemporal Representation Learning by Exploiting Video Continuity (AAAI 2022)</a></p>
+        <p><a href=http://hdl.handle.net/10012/18208 target="_blank">Localizing and identifying video playing speed changes (Master Thesis)</a></p>
     </section>
 
-    <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
-    </footer>
+    <!-- <section id="portfolio">
+        <h2>Portfolio</h2>
+        <p>Showcase of projects with links to repositories, demos, or videos.</p>
+    </section> -->
 
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: lizhe.chen@outlook.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/lizhe-lucas-chen-69509a135/" target="_blank">Lizhe Lucas Chen</a></p>
+    </section>
+
+    <!-- <section id="blog">
+        <h2>Blog</h2>
+        <p>Insights and experiences in the field. (Optional section)</p>
+    </section> -->
 </body>
-
-
 </html>
