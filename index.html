@@ -1,145 +1,355 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Lizhe Chen - Research Engineer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lizhe Chen | Senior Machine Learning Engineer</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f5f7fb;
+            color: #1f2937;
+            line-height: 1.7;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 24px;
         }
 
         header {
-            background-color: #333;
+            background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
             color: white;
-            padding: 20px;
-            text-align: center;
+            padding: 80px 0;
         }
 
-        header h1 {
-            margin: 0;
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 12px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #d1d5db;
+            max-width: 800px;
+        }
+
+        .contact-links {
+            margin-top: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+
+        .contact-links a {
+            color: white;
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 10px 16px;
+            border-radius: 999px;
+            transition: 0.2s ease;
+        }
+
+        .contact-links a:hover {
+            background: rgba(255,255,255,0.1);
+            text-decoration: none;
         }
 
         section {
-            padding: 20px;
-            margin: 20px;
+            padding: 64px 0;
         }
 
-        #about, #experience, #skills, #research, #portfolio, #contact, #blog {
-            background-color: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 32px;
+            color: #111827;
         }
 
-        h2 {
-            color: #333;
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 14px;
+        }
+
+        .experience-header h3 {
+            font-size: 1.25rem;
+            color: #111827;
+        }
+
+        .experience-header span {
+            color: #6b7280;
+            font-weight: 500;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-box {
+            background: white;
+            border-radius: 18px;
+            padding: 24px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+        }
+
+        .skill-box h3 {
+            margin-bottom: 14px;
+            color: #111827;
+        }
+
+        footer {
+            background: #111827;
+            color: #d1d5db;
+            text-align: center;
+            padding: 32px 0;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-title {
+                font-size: 1.6rem;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Personal Website</h1>
-        <p>I'm Lizhe Chen, a Research Engineer at Meta Platform Inc. (Reality Labs), passionate about computer science and technology.</p>
+        <div class="container hero">
+            <h1>Lizhe Chen</h1>
+            <p>
+                Senior Machine Learning Engineer with expertise in distributed ML systems,
+                multi-modal learning, computer vision, real-time inference, and large-scale
+                data infrastructure across AR/VR, recommendation systems, and video understanding.
+            </p>
+
+            <div class="contact-links">
+                <a href="mailto:lizhe.chen@outlook.com">Email</a>
+                <a href="https://www.linkedin.com/in/lizhe-lucas-chen-69509a135/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/" target="_blank">GitHub</a>
+            </div>
+        </div>
     </header>
 
     <section id="about">
-        <h2>About Me</h2>
-        <p>Educational Background:</p>
-        <ul>
-            <li>MMath in Computer Science, University of Waterloo</li>
-            <li>BSc in Computer Science, University of Toronto</li>
-        </ul>
-        <p>Awards:</p>
-        <ul>
-            <li>Second Place in CVPR 2022’s ActivityNet Challenge</li>
-            <li>Best Data Visualization Award, American Statistical Association Data Fest</li>
-        </ul>
+        <div class="container">
+            <h2 class="section-title">About</h2>
+            <div class="card">
+                <p>
+                    I am a machine learning engineer and researcher focused on scalable AI systems,
+                    multi-modal transformers, real-time interaction models, and video understanding.
+                    My experience spans AR/VR interaction systems at Meta Reality Labs, large-scale
+                    distributed training at Huawei Noah’s Ark Lab, and ML platform infrastructure at Movable Ink.
+                </p>
+                <br />
+                <p>
+                    I specialize in building end-to-end ML systems that integrate data pipelines,
+                    distributed training, feature engineering, infrastructure observability, and
+                    low-latency inference for production environments.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+
+            <div class="card">
+                <div class="experience-header">
+                    <div>
+                        <h3>University of Waterloo</h3>
+                        <p>MMath in Computer Science</p>
+                    </div>
+                    <span>May 2022</span>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="experience-header">
+                    <div>
+                        <h3>University of Toronto</h3>
+                        <p>BSc in Computer Science</p>
+                    </div>
+                    <span>Jun 2019</span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Work Experience</h2>
 
-            <h2>Work Experience</h2>
-            <article>
-                <h3>Research Engineer, Meta Platform Inc. (Reality Labs)</h3>
-                <p>Aug 2022 – Current</p>
+            <div class="card">
+                <div class="experience-header">
+                    <div>
+                        <h3>Senior Machine Learning Engineer · Movable Ink</h3>
+                    </div>
+                    <span>Jun 2024 – Present</span>
+                </div>
                 <ul>
-                    <li>Developed a Python library to evaluate user interactions and compare new UI element or controller prototype features.</li>
-                    <li>Built an interactive data visualization platform using Python and Pandas queries to visualize experiment results online.</li>
-                    <li>Created an online model that utilizes EMG & IMU activities to tag user behavior and personalize posture recognition.</li>
-                    <li>Engineered user activity feature extraction for ML models with PySpark, optimizing cloud data bucket input/output.</li>
-                    <li>Managed the training of a user action prediction model by interpreting TensorBoard and guiding parameter tuning.</li>
+                    <li>Developed a custom job-DAG framework with dependency tracking and version pinning to orchestrate ML workloads across Kubernetes, Dataproc, and Vertex AI.</li>
+                    <li>Engineered large-scale Delta Lake feature stores and Spark point-in-time joins for scalable feature infrastructure.</li>
+                    <li>Built auto-scaling heuristics to dynamically adjust GPU tiers based on data volume and workload demand.</li>
+                    <li>Implemented observability tooling using Helm, Prometheus, and Grafana dashboards to monitor ML infrastructure.</li>
+                    <li>Scaled multi-modal ML infrastructure integrating transformers, gradient-boosted trees, and multi-armed bandit systems.</li>
                 </ul>
-            </article>
-        
-            <article>
-                <h3>Computer Vision Researcher, Huawei Canada (Noah’s Ark)</h3>
-                <p>Sep 2020 – Aug 2022</p>
-                <ul>
-                    <li>Developed an advanced social media content classification algorithm by combining NLP and vision neural networks.</li>
-                    <li>Conducted self-supervised video learning research led to an 11% accuracy boost in fine-grained action recognition.</li>
-                    <li>Led interns to perform distributed training of Vision transformer on cloud with extensive video and text datasets.</li>
-                    <li>Optimized ResNet with compression for online gesture recognition, integrating it into a C++ environment (ONNX).</li>
-                    <li>Leveraged multimodal transformer models to excel in text and video retrieval, enhancing video recommendations.</li>
-                </ul>
-            </article>
-        
-            <article>
-                <h3>R&D Engineer, Modiface Inc.</h3>
-                <p>Sep 2018 – May 2019</p>
-                <ul>
-                    <li>Customized the MobileNet-V2 for the weakly-supervised human nail semantic segmentation.</li>
-                    <li>Implemented neural network architectures in PyTorch, such as inverted residual block, decomposed CNN.</li>
-                    <li>Developed data cleaning and augmentation classes for PyTorch and TensorFlow frameworks.</li>
-                </ul>
-            </article>
-        
-            <article>
-                <h3>Web Developer Intern, Modiface Inc.</h3>
-                <p>May 2017 – Apr 2018</p>
-                <ul>
-                    <li>Built a Facebook Chat bot for recommending products and helping customers to simulate makeup on virtually.</li>
-                    <li>Constructed back-end & database for web app through Node.JS and writing SQL queries to generate data report.</li>
-                    <li>Reduced ~30% response time by optimizing the data structures and integrating the actions.</li>
-                </ul>
-            </article>
-        
-            <!-- Add other work experiences in a similar format -->
+            </div>
 
-    </section>
+            <div class="card">
+                <div class="experience-header">
+                    <div>
+                        <h3>Research Engineer · Meta Reality Labs</h3>
+                    </div>
+                    <span>Aug 2022 – Jun 2024</span>
+                </div>
+                <ul>
+                    <li>Engineered low-latency streaming models processing EMG and IMU sensor data for Orion AR Glasses gesture input.</li>
+                    <li>Built large-scale data collection and annotation systems for AR interaction research.</li>
+                    <li>Developed a real-time VR eye-gaze text input system using neural target prediction and autocomplete pipelines.</li>
+                    <li>Automated distributed data pipelines via Airflow and deployed telemetry dashboards for signal monitoring.</li>
+                </ul>
+            </div>
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <p>Programming Languages:</p>
-        <ul>
-            <li>Python, JavaScript, C++, Java, MATLAB, SQL</li>
-        </ul>
-        <p>Libraries & Tools:</p>
-        <ul>
-            <li>PyTorch, TensorFlow, Pandas, Seaborn, PySpark, ONNX Runtime, OpenCV, Huawei Cloud, AWS</li>
-        </ul>
+            <div class="card">
+                <div class="experience-header">
+                    <div>
+                        <h3>Associate Researcher · Huawei Canada (Noah’s Ark Lab)</h3>
+                    </div>
+                    <span>Jan 2021 – Aug 2022</span>
+                </div>
+                <ul>
+                    <li>Led distributed training of Video Vision Transformers (ViViT) across multi-node compute clusters.</li>
+                    <li>Accelerated inference by deploying quantized deep learning models into low-latency ONNX runtimes.</li>
+                    <li>Engineered multi-expert ensemble frameworks integrating concurrent video and text modalities.</li>
+                    <li>Conducted self-supervised learning research that improved fine-grained action recognition accuracy.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="experience-header">
+                    <div>
+                        <h3>Software Engineer · Modiface (L'Oréal)</h3>
+                    </div>
+                    <span>Sep 2018 – May 2019</span>
+                </div>
+                <ul>
+                    <li>Optimized backend data structures to reduce response latency by approximately 30%.</li>
+                    <li>Built backend infrastructure for recommendation systems and real-time virtual try-on applications.</li>
+                    <li>Customized MobileNet architectures for low-latency edge image segmentation tasks.</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
     <section id="research">
-        <h2>Academic Research</h2>
-        <p>Focused on self-supervised video representation learning and dynamic cross-scale aggregation for temporal action localization.</p>
-        <p><a href=https://ojs.aaai.org/index.php/AAAI/article/view/20047 target="_blank">Self-Supervised Spatiotemporal Representation Learning by Exploiting Video Continuity (AAAI 2022)</a></p>
-        <p><a href=http://hdl.handle.net/10012/18208 target="_blank">Localizing and identifying video playing speed changes (Master Thesis)</a></p>
+        <div class="container">
+            <h2 class="section-title">Academic Research & Publications</h2>
+
+            <div class="card">
+                <h3>Self-Supervised Spatiotemporal Representation Learning by Exploiting Video Continuity</h3>
+                <p>AAAI 2022</p>
+                <p>
+                    <a href="https://ojs.aaai.org/index.php/AAAI/article/view/20047" target="_blank">
+                        View Publication
+                    </a>
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Localizing and Identifying Video Playing Speed Changes</h3>
+                <p>Master Thesis · University of Waterloo</p>
+                <p>
+                    <a href="http://hdl.handle.net/10012/18208" target="_blank">
+                        View Thesis
+                    </a>
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Multi-Expert System for Action Recognition</h3>
+                <p>
+                    Integrated transformer models into an action detection system and won
+                    2nd place in the <strong>CVPR 2022 ActivityNet Challenge</strong>.
+                </p>
+                <br />
+                <p>
+                    <a href="https://youtu.be/YUGILnxpsuw?list=PLw6H4u-XW8sjI5GKa29HFcy9AdZrisYXG&t=1135" target="_blank">
+                        Watch Workshop Presentation
+                    </a>
+                </p>
+            </div>
+        </div>
     </section>
 
-    <!-- <section id="portfolio">
-        <h2>Portfolio</h2>
-        <p>Showcase of projects with links to repositories, demos, or videos.</p>
-    </section> -->
+    <section id="awards">
+        <div class="container">
+            <h2 class="section-title">Awards</h2>
+
+            <div class="card">
+                <ul>
+                    <li>2nd Place — CVPR 2022 ActivityNet Challenge</li>
+                    <li>Best Data Visualization Award — American Statistical Association DataFest</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: lizhe.chen@outlook.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/lizhe-lucas-chen-69509a135/" target="_blank">Lizhe Lucas Chen</a></p>
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="card">
+                <p><strong>Email:</strong> lizhe.chen@outlook.com</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lizhe-lucas-chen-69509a135/" target="_blank">linkedin.com/in/lizhe-lucas-chen-69509a135</a></p>
+            </div>
+        </div>
     </section>
 
-    <!-- <section id="blog">
-        <h2>Blog</h2>
-        <p>Insights and experiences in the field. (Optional section)</p>
-    </section> -->
+    <footer>
+        <div class="container">
+            <p>© 2026 Lizhe Chen · Senior Machine Learning Engineer</p>
+        </div>
+    </footer>
 </body>
 </html>
